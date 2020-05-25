@@ -12,6 +12,14 @@ public class lesson_5 {
             PersonArray[2] = new person("Второв Арсений Анатольевич", "Врач", "senya@mailbox.com", "89564567464", 50000, 50);
             PersonArray[3] = new person("Шаталов Константин Петрович", "Экономист", "kostya3@mailbox.com", "89547896090", 60000, 60);
             PersonArray[4] = new person("Орешкин Олег Михайлович", "Таксист", "oleg4@mailbox.com", "89434403000", 70000, 70);
+            DoInfo(PersonArray);
         }
+        public static void DoInfo(person[] array){
+        for(int i = 0; i < array.length; i++){
+            if(array[i].GetAge() > 40){
+                array[i].PrintInfo_person(array[i].GetFullName(),array[i].GetPosition(), array[i].GetEmail(), array[i].GetPhoneNumber(),array[i].GetSalary(),array[i].GetAge());
+            }
+        }
+    }
 }
 
