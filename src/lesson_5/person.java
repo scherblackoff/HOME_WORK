@@ -20,7 +20,6 @@ public class person {
     }
 
     public void PrintInfo_person(String FullName, String Position, String EmailAddress, String PhoneNumber, int Salary, int Age) {
-        if (Age > 40) {
             System.out.println("ФИО : " + this.FullName);
             System.out.println("Должность : " + this.Position);
             System.out.println("Адрес почты : " + this.EmailAddress);
@@ -28,6 +27,25 @@ public class person {
             System.out.println("Зарплата : " + this.Salary);
             System.out.println("Возвраст : " + this.Age);
             System.out.println();
-        }
+       }
+    public int GetAge(){
+        return Age;
+    }
+    public String GetFullName(){
+        return FullName;
+    }
+    public String GetPosition(){
+        return Position;
+    }
+    public String GetEmail(){
+        return EmailAddress;
+    }
+    public String GetPhoneNumber(){
+        return PhoneNumber;
+    }
+    public int GetSalary(){
+        return Salary;
     }
 }
+
+  
