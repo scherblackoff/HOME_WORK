@@ -1,6 +1,5 @@
 package lesson_5;
 
-import org.w3c.dom.ls.LSOutput;
 
 public class person {
     private String FullName;
