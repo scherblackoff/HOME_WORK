@@ -14,7 +14,6 @@ public class My_Window extends JFrame {
         jtf.setEditable(false);
         Color color = new Color(0xA6C63B17, true);
         add(jtf, BorderLayout.PAGE_START);
-        JPanel jp = new JPanel();
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4, 4));
         char[] chars = {'7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', '.', '=', '+'};
